@@ -29,4 +29,9 @@ fun main() {
     println("------------------")
     funcionarioSet.remove(maria)
     funcionarioSet.forEach { println(it) }
+    println("------pedro pedro------------")
+
+    funcionarioSet.add(pedro)
+    funcionarioSet.add(pedro)
+    funcionarioSet.forEach { println(it) }
 }

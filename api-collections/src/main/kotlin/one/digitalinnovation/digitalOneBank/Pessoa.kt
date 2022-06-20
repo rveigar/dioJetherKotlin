@@ -1,14 +1,28 @@
 package one.digitalinnovation.digitalOneBank
 
-class Pessoa {
+class Pessoa constructor(var idade:Int=33){
     var nome:String = "Veiga"
+        private set
+
     var cpf:String="548.577.897-74"
+
+    inner class Endereco {
+        var logradouro:String = "Avenida Paulista"
+    }
+    fun trocaNome(novoNome:String) {
+        nome = novoNome
+    }
+
 }
 
 fun main() {
     val veiga = Pessoa()
+    //veiga.nome= "roberto"
+    veiga.trocaNome("Vivian")
     println (veiga.nome)
     println (veiga.cpf)
+    println (veiga.Endereco().logradouro)
+    println (veiga.idade)
     val z:Float
     z=calculate(30.0f,10.0f,::divisao)
     println("z= $z")

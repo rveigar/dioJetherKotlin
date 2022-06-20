@@ -10,13 +10,13 @@ fun main() {
     repositorio.create(joao.nome, joao)
     repositorio.create(pedro.nome, pedro)
     repositorio.create(maria.nome, maria)
-
+    println("-----------findById maria------------- ")
     println(repositorio.findById(maria.nome))
 
-    println("----------------------")
+    println("-------findAll---------------")
     repositorio.findAll().forEach { println(it) }
 
-    println("----------------------")
+    println("------remove maria - findAll---------------")
     repositorio.remove(maria.nome)
     repositorio.findAll().forEach { println(it) }
 }

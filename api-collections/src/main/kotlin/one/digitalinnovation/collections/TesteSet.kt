@@ -19,4 +19,13 @@ fun main() {
     println("-----------------")
     val resultIntersect = funcionarios3.intersect(funcionarios2)
     resultIntersect.forEach { println(it) }
+
+    val (a, b) = Pair(1, "x")
+    println(a) // 1
+    println(b) // x
+    val p1 = Pair (2,2)
+    val p2 = Pair (2,4)
+    val p3 = Pair (3,3)
+    var map = mapOf(p1,p2,p3)
+    println(map)
 }
