@@ -1,4 +1,4 @@
-package Testes
+package one.digitalinnovation.Testes
 
 data class Movie(var name: String, var studio: String, var rating: Float)
 
